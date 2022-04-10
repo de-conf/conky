@@ -32,7 +32,7 @@ import pathlib
 
 # Inittiating variables
 home = expanduser("~")
-working_dir = home+'/conky/conky-grapes/'
+working_dir = home+'/.conky/conky-grapes/'
 src_lua = working_dir+'rings-v2_tpl'
 dest_lua = working_dir+'rings-v2_gen.lua'
 src_conky = working_dir+'conky_tpl'
