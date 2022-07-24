@@ -88,8 +88,8 @@ settings_table_io = {
 settings_table = {
 
     {
-        name='hwmon',
-        arg='1 temp 1',
+        name='hwmon 2',
+        arg='temp 1',
         max=110,
         bg_colour=0x3b3b3b,
         bg_alpha=0.8,
@@ -466,7 +466,7 @@ function temp_watch()
     warn_value=70
     crit_value=80
 
-temperature=tonumber(conky_parse("${hwmon 1 temp 1}"))
+temperature=tonumber(conky_parse("${hwmon 2 temp 1}"))
 
     if temperature<warn_value then
         settings_table[1]['fg_colour']=normal

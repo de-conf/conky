@@ -142,12 +142,12 @@ def cpu_temperature():
     """
     cpu_temp = {}
     temp_candidates = [
-        '/sys/class/hwmon/hwmon0/temp0_input',
-        '/sys/class/hwmon/hwmon0/temp1_input',
-        '/sys/class/hwmon/hwmon0/temp2_input',
-        '/sys/class/hwmon/hwmon1/temp0_input',
-        '/sys/class/hwmon/hwmon1/temp1_input',
-        '/sys/class/hwmon/hwmon1/temp2_input',
+        '/sys/class/hwmon/hwmon2/temp0_input',
+        '/sys/class/hwmon/hwmon2/temp1_input',
+        '/sys/class/hwmon/hwmon2/temp2_input',
+        '/sys/class/hwmon/hwmon3/temp0_input',
+        '/sys/class/hwmon/hwmon3/temp1_input',
+        '/sys/class/hwmon/hwmon3/temp2_input',
         ]
     try:
         for i in temp_candidates:
